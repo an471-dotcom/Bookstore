@@ -1,4 +1,4 @@
-import {Select, Button, Modal, Input} from 'antd'
+import {Button, Modal, Input} from 'antd'
 import {ShoppingCartOutlined} from "@ant-design/icons";
 import {useState} from 'react';
 import {useMoralis} from 'react-moralis'
