@@ -1,12 +1,11 @@
-import { PageHeader, Button ,Input,Space,Badge} from 'antd';
+import { PageHeader, Button ,Space} from 'antd';
 import { useMoralis } from "react-moralis";
 import './Header.css'
 import {Link} from 'react-router-dom'
-import Amazon from "../images/logo.png"
-import USA from "../images/usa.png"
+
 import BookStore from "../images/bookstore.png"
-import {ShoppingCartOutlined,MenuOutlined} from "@ant-design/icons"
-const {Search} = Input;
+import {MenuOutlined} from "@ant-design/icons"
+
 const categories = ["Comics", "Literature", "Novels", "Fantasy", "Horror", "Adventure"];
 const Header = () => {
   const { authenticate,account } = useMoralis();

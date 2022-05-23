@@ -2,7 +2,7 @@ import {Select, Button, Modal, Input} from 'antd'
 import {ShoppingCartOutlined} from "@ant-design/icons";
 import {useState} from 'react';
 import {useMoralis} from 'react-moralis'
-const {Option} = Select;
+
 const {TextArea} = Input;
 
 const Purchase =({book})=>{
@@ -22,7 +22,7 @@ const Purchase =({book})=>{
             receiver: "0xc45dDff7CEf6cFC68f348d1Ac16Be39FBA0A33F4",
           };
           let result = await Moralis.transfer(options1);
-
+          console.log(result)
           const Transcation = Moralis.Object.extend("Transaction");
           const transaction = new Transcation();
 
